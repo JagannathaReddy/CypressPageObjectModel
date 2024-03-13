@@ -6,6 +6,7 @@ describe('template spec', () => {
 mainPage.getInputFields().click();
 editPage.getFullName().type("Jagannatha");
 editPage.getAppendText().type("  Reddy");
+
 editPage.getInsideTextBox().then((getText)=>{
   cy.log(getText.text());});
 
